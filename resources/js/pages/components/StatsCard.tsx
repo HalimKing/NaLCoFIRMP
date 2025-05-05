@@ -1,19 +1,21 @@
 import { useState, useEffect } from 'react';
-import { Users, TrendingUp, Activity, DollarSign, ShoppingCart, Users2, LucideIcon, ClockArrowDown } from 'lucide-react';
+import { Users, TrendingUp, Activity, DollarSign, ShoppingCart, Users2, LucideIcon, ClockArrowDown, ChartBar, ClipboardCheck, ReceiptCent } from 'lucide-react';
 import { JSX } from 'react/jsx-runtime';
 
 // Define available icon options
-type IconOption = 'users' | 'activity' | 'dollar' | 'cart' | 'team' | 'trending' | 'pending';
+type IconOption = 'users' | 'activity' | 'dollar' | 'cart' | 'team' | 'trending' | 'pending' | 'chart' | 'clipboard';
 
 // Map of icon names to Lucide components
 const iconMap: Record<IconOption, LucideIcon> = {
   users: Users,
   activity: Activity,
-  dollar: DollarSign,
+  dollar: ReceiptCent,
   cart: ShoppingCart,
   team: Users2,
   trending: TrendingUp,
   pending: ClockArrowDown, // Placeholder for a different icon
+  chart: ChartBar,
+  clipboard: ClipboardCheck,
 };
 
 // Define preset color themes instead of dynamic class names
